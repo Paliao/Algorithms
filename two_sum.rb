@@ -23,6 +23,3 @@ def two_sum(nums, target)
        end
     end
 end
-
-answer_array = two_sum([3,2,4],6)
-print answer_array

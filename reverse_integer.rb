@@ -35,14 +35,13 @@ def reverse(x)
             x = x/10
         end
     end
-    if negative == true && y < 2**31
-        return (y*(-1))
-    elsif negative == false && y < 2**31
-        return (y)
+    if y < 2**31
+        if negative == true
+            return (y*(-1))
+        elsif negative == false
+            return (y)
+        end
     else
         return y = 0
     end
 end
-
-x = 123
-puts reverse(x)
