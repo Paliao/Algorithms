@@ -1,17 +1,15 @@
-=begin
 
-Given a string, you need to reverse the order of characters in each word within a sentence while still preserving whitespace and initial word order.
 
-Example 1:
-Input: "Let's take LeetCode contest"
-Output: "s'teL ekat edoCteeL tsetnoc"
-Note: In the string, each word is separated by single space and there will not be any extra space in the string.
-=end
+# Given a string, you need to reverse the order of characters in each word
+# within a sentence while still preserving whitespace and initial word order.
 
-def reverse_words(s)
-    array = s.split
-    array.each do |word|
-        word.reverse!
-    end
-    return array.join(" ")
+# Example 1:
+# Input: "Let's take LeetCode contest"
+# Output: "s'teL ekat edoCteeL tsetnoc"
+# Note: In the string, each word is separated by single space and
+# there will not be any extra space in the string.
+
+def reverse(string)
+  array = string.split
+  array.each(&:reverse!).join(" ")
 end

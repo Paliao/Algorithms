@@ -1,5 +1,5 @@
 # Determine whether an integer is a palindrome. Do this without extra space.
-def is_palindrome(x)
+def palindrome?(x)
     y = 0
     while x > 0
         y = y*10
