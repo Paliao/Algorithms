@@ -19,7 +19,7 @@ def frequency_sort(string)
     rearranged = []
 
     string.each_char do |char|
-        counters[char] = 0 unless counters.include?(char)
+        counters[char] = 0 if counters[char].nil?
         counters[char] += 1
     end
     sorted = counters.sort_by { |key, value| value}.reverse

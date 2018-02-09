@@ -9,4 +9,4 @@ def longest_common_prefix(array)
         return word_a[0...index] if char != word_b[index]
     end
     return word_a
-  end
+end
